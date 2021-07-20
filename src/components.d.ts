@@ -8,8 +8,6 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppRoot {
     }
-    interface PopUp {
-    }
     interface ToggleButton {
         "mode": 'connected' | 'willLoad' | 'didLoad';
         "name": string;
@@ -25,12 +23,6 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
-    interface HTMLPopUpElement extends Components.PopUp, HTMLStencilElement {
-    }
-    var HTMLPopUpElement: {
-        prototype: HTMLPopUpElement;
-        new (): HTMLPopUpElement;
-    };
     interface HTMLToggleButtonElement extends Components.ToggleButton, HTMLStencilElement {
     }
     var HTMLToggleButtonElement: {
@@ -45,15 +37,12 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
-        "pop-up": HTMLPopUpElement;
         "toggle-button": HTMLToggleButtonElement;
         "toggle-group": HTMLToggleGroupElement;
     }
 }
 declare namespace LocalJSX {
     interface AppRoot {
-    }
-    interface PopUp {
     }
     interface ToggleButton {
         "mode"?: 'connected' | 'willLoad' | 'didLoad';
@@ -64,7 +53,6 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "app-root": AppRoot;
-        "pop-up": PopUp;
         "toggle-button": ToggleButton;
         "toggle-group": ToggleGroup;
     }
@@ -74,7 +62,6 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-            "pop-up": LocalJSX.PopUp & JSXBase.HTMLAttributes<HTMLPopUpElement>;
             "toggle-button": LocalJSX.ToggleButton & JSXBase.HTMLAttributes<HTMLToggleButtonElement>;
             "toggle-group": LocalJSX.ToggleGroup & JSXBase.HTMLAttributes<HTMLToggleGroupElement>;
         }
