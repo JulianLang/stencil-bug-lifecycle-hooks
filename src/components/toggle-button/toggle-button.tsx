@@ -8,9 +8,9 @@ export class ToggleButton {
   @Prop() name!: string;
   @Prop() mode: 'connected' | 'willLoad' | 'didLoad' = 'connected';
 
-  connectedCallback() {
-    console.log('connected', this.name);
-  }
+  // connectedCallback() {
+  //   console.log('connected', this.name);
+  // }
 
   componentWillLoad() {
     console.log('willLoad', this.name);

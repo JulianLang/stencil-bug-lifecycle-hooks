@@ -7,9 +7,9 @@ import { Component, h, Prop } from '@stencil/core';
 export class ToggleGroup {
   @Prop() name!: string;
 
-  connectedCallback() {
-    console.log('connected', this.name);
-  }
+  // connectedCallback() {
+  //   console.log('connected', this.name);
+  // }
 
   componentWillLoad() {
     console.log('willLoad', this.name);
