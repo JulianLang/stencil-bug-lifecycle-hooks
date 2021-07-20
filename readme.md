@@ -8,7 +8,9 @@
 4. goto `http://localhost:3333/`
 5. hit `F12` to open dev tools
 6. see console output
-7. reload page several times and see sporadic changes in console output order
+7. reload page several times\* and see sporadic changes in console output order
 8. go to the code `components/toggle-group` and `components/toggle-button` and play around with the life-cycle hooks (comment / uncomment)
 
-**Note:** I figured that having many `console.log`s activated it makes it more likely that the order in console will change in fewer page reloads.
+**\* sometimes it takes a bit until changes in order occur (≈ 10 - 30 times)**
+
+**Also note:** I figured that having many `console.log`s activated it makes it more likely that the order in console will change in fewer page reloads.
