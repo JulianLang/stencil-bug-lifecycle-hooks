@@ -1,5 +1,7 @@
 # Repro
 
+> Repro to issue: https://github.com/ionic-team/stencil/issues/2954
+
 1. clone repository: https://github.com/JulianLang/stencil-bug-lifecycle-hooks.git
 2. `npm install`
 3. `npm start`
